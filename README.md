@@ -65,9 +65,10 @@ A stylish and user-friendly desktop application for batch converting and resizin
 
 ➔Double-click the downloaded file to run the application!
 (Note: Your browser or Windows may show a security warning because the app is not from a major publisher. This is normal. You can safely choose to "Keep" and "Run anyway".)
+![image](https://github.com/user-attachments/assets/6e1c4696-7d4a-4427-938a-47b571176cb3)
 
 
-
+============================================================================================
 
 **B)** **How to Run from Source (For Developers)**
 
