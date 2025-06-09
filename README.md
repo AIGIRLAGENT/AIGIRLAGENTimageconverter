@@ -94,3 +94,11 @@ If you want to run or modify the Python script directly:
 **4.** Run the script:
     
     python imageprocess.py
+
+
+**Technologies Used**
+
+    Python 3
+    CustomTkinter - For the modern graphical user interface.
+    Pillow (PIL Fork) - For all image processing tasks.
+    PyInstaller - To package the application into a standalone executable.
