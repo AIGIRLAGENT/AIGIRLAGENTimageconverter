@@ -4,31 +4,53 @@ A user-friendly desktop application for batch image conversion and resizing, bui
 **AIGIRLAGENT Image Converter**
 
 A stylish and user-friendly desktop application for batch converting and resizing images. Built with Python and CustomTkinter, this tool is packaged as a standalone .exe, requiring no Python installation for end-users.
-![image](https://github.com/user-attachments/assets/b3dd6a0a-990d-489c-8cca-570b97ea0a34)
+![image](https://github.com/user-attachments/assets/9d34f528-8861-4a55-8e39-6b4d1e1754e9)
+
 
 **Features**
 
-➔User-Friendly Interface: A modern, "glassmorphism" style GUI that's intuitive to use.
+➔ Modern, User-Friendly Interface: An intuitive GUI that is easy for anyone to use.
 
-➔Multi-File Selection: Select one or multiple images at once using standard controls (Ctrl+Click, Shift+Click, Ctrl+A).
+➔Batch Processing: Select and convert multiple images at once using standard controls (Ctrl+Click, Shift+Click, Ctrl+A).
 
-➔Aspect Ratio Cropping: Automatically crop images to fit standard aspect ratios:
+➔Flexible Resizing: Aspect Ratio Cropping: Automatically crop images to fit standard aspect ratios:
+      
+      1) 16:9 (Widescreen)
+      2) 9:16 (Vertical/Story)
+      3) 1:1 (Square)
+      4) 4:5 (Portrait)
+      5) Favicon Support: A special one-click option to create a 32x32 .ico favicon.
+  
+      Crop to Fill: Automatically crops the image to perfectly fit the selected aspect ratio.
+  
+      Pad to Fit: Preserves the entire original image by adding white borders to fit the aspect ratio.
 
-1) 16:9 (Widescreen)
-2) 9:16 (Vertical/Story)
-3) 1:1 (Square)
-4) 4:5 (Portrait)
-5) Favicon Support: A special one-click option to create a 32x32 .ico favicon.
+➔Multiple Output Formats: Convert your images to JPG, PNG, WebP, or ICO.
 
-Multiple Output Formats: Save your converted images as:
-1) JPG
-2) PNG
-3) WEBP
-4) ICO
+      1) JPG
+      2) PNG
+      3) WEBP
+      4) ICO
+
+➔Adjustable Quality & Compression:
+
+    Use a slider (1-100) to control the quality and file size for JPG and WebP formats.
+
+    PNG files are automatically optimized for the best lossless compression.
+
+➔Real-time File Size Estimation: Get an instant estimate of the output file size as you adjust settings.
+
+➔Powerful Filenaming:
+
+    Keep the original filename.
+
+    Use a custom filename for single or multiple files.
+
+    Automatically adds sequential numbers (file-1, file-2, etc.) for bulk custom naming.
 
 ➔Standalone Application: Packaged with PyInstaller into a single .exe file that runs on Windows without any dependencies.
 
-
+============================================================================================
 
 
 **A)** **How to Use (For Non Developers and End-Users)**
@@ -54,19 +76,21 @@ If you want to run or modify the Python script directly:
 **1.** Clone the repository:
 
 
-git clone https://github.com/AIGIRLAGENT/AIGIRLAGENTimageconverter.git
+    git clone https://github.com/AIGIRLAGENT/AIGIRLAGENTimageconverter.git
 
-cd AIGIRLAGENTimageconverter
+    cd AIGIRLAGENTimageconverter
 
 **2.** Set up a virtual environment (recommended):
 
-python -m venv venv
+    python -m venv venv
 
-venv\Scripts\activate  # On Windows
-source venv/bin/activate , On macOS/Linux
+    venv\Scripts\activate  # On Windows
+    source venv/bin/activate # On macOS/Linux
 
 **3.** Install the required libraries:
-pip install customtkinter pillow
+    
+    pip install customtkinter pillow
 
 **4.** Run the script:
-python imageprocess.py
+    
+    python imageprocess.py
